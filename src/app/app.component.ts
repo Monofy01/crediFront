@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Persona} from "./persona";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crediFront';
+
+  public onOpenModal(persona: Persona, mode: string) {
+    const container = document.getElementById('persona-container');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.style.display = 'none';
+    button.setAttribute('data-toggle', 'modal');
+    if (mode === 'add') {
+      button.setAttribute('data-target', '#addPersonaModal');
+    }
+    container!.appendChild(button);
+    button.click();
+  }
 }

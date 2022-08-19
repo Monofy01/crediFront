@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+.modal-content {
+  background-color: #1E3A55;
+}
+body{margin-top:20px;
+  color: #bcd0f7;
+  background: #1A233A;
+}
+
+i {
+  color: white;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+}
+
+tr {
+  text-align: center;
+}
+
+button {
+  margin-inline: 4px;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.nav-specific {
+  color: #bcd0f7;
+  background: #1E3A55;
+}
+
+
+
